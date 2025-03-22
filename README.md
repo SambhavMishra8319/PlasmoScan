@@ -1,49 +1,61 @@
-PlasmoScan - AI-based Malaria & Anemia Detection
+PlasmoScan - AI-based Malaria Detection
 
-📌 Project Overview
+🏥 What PlasmoScan Does
 
-PlasmoScan is an AI-powered diagnostic tool designed to detect malaria and anemia from blood cell images. The model leverages deep learning to classify cell images as Parasitized (Malaria) or Uninfected using a Convolutional Neural Network (CNN).
+PlasmoScan is an AI-powered web application designed to detect malaria from blood smear images. It utilizes deep learning to analyze cell images and provide a prediction on whether malaria is present. The goal is to provide an affordable and accessible diagnostic tool for early malaria detection.
 
-🚀 Features
+🔧 How to Run It
 
-Automated Detection: Classifies blood cell images with AI.
+1️⃣ Installation
 
-Fast & Affordable: Provides quick results for early diagnosis.
+Ensure you have Python installed, then clone this repository:
 
-Web  Deployment: Accessible through a web app (Flask)
-Trained on Large Datasets: Uses labeled blood cell images for accuracy.
+git clone https://github.com/yourusername/PlasmoScan.git
+cd PlasmoScan
 
-📂 Dataset & Preprocessing
+2️⃣ Install Dependencies
 
-Dataset Location: data/cell_images/
+pip install -r requirements.txt
 
-Categories: Parasitized/ and Uninfected/
+3️⃣ Run the Web Application
 
-Preprocessing: Images are resized to 128x128, normalized, and saved as NumPy arrays.
+python app.py
 
-Preprocessing Script: preprocess.py
+The app will run on http://127.0.0.1:5000/.
 
-python preprocess.py  # Runs preprocessing on dataset
+📸 Dataset Location
 
-🏋️ Model Training
+The dataset is located at data/cell_images/. Due to its large size, you can download it from:
+Dataset Link
 
-Framework: TensorFlow/Keras
+🖼️ Flowchart of the System
 
-Architecture: CNN
+User Uploads Blood Smear Image 📤
 
-Training Script: train_model.py
+AI Analyzes Image Using Deep Learning Model 🤖
 
-Trained Model Path: models/malaria_model.h5
+Prediction with Confidence Score is Generated 📊
 
-python train_model.py  
+Result is Displayed to the User ✅
 
-🌍 Deployment
+💡 Challenges We Ran Into
 
-🔹 Web App (Flask)
+Training the model with a high accuracy while avoiding overfitting.
 
-File: app.py
+Optimizing image preprocessing to improve prediction quality.
 
-Run Locally:
+Implementing a smooth and user-friendly web interface.
 
-python app.py 
+Handling large dataset files and managing deployment.
 
+🔬 Technologies Used
+
+Deep Learning: TensorFlow/Keras
+
+Computer Vision: OpenCV
+
+Backend: Flask/Django
+
+Frontend: HTML, CSS, JavaScript
+
+Mobile App (Future Expansion): Flutter
