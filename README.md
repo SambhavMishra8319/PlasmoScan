@@ -59,3 +59,48 @@ Backend: Flask/Django
 Frontend: HTML, CSS, JavaScript
 
 Mobile App (Future Expansion): Flutter
+
+Use Case: How PlasmoScan Works in a Real-Life Scenario
+Patient Visits a Local Clinic
+
+A patient in a rural area shows symptoms like fever, chills, and fatigue.
+
+The local healthcare worker suspects malaria and decides to test for it.
+
+Blood Sample Collection
+
+A small blood sample is taken from the patient.
+
+The sample is prepared as a blood smear on a glass slide.
+
+Microscopic Image Capture
+
+The slide is placed under a microscope.
+
+The healthcare worker captures an image using a mobile camera or digital microscope.
+
+Image Upload to PlasmoScan
+
+The captured image is uploaded to PlasmoScan via a mobile or web-based interface.
+
+AI-Powered Analysis
+
+PlasmoScan processes the image using deep learning algorithms.
+
+It detects malaria parasites and calculates the confidence score.
+
+Instant Diagnosis Result
+
+The system provides an immediate result:
+
+Positive for Malaria → The patient is advised to begin treatment.
+
+Negative for Malaria → Further medical evaluation may be needed.
+
+Faster Treatment & Improved Healthcare
+
+The healthcare worker prescribes the necessary treatment.
+
+The patient receives timely care, reducing complications and risk of severe malaria.
+
+This process eliminates delays, reduces dependence on expert technicians, and brings affordable malaria detection to remote areas.
