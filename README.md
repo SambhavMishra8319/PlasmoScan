@@ -1,106 +1,101 @@
 PlasmoScan - AI-based Malaria Detection
+🏥 What is PlasmoScan?
+PlasmoScan is an AI-powered web application designed to detect malaria from blood smear images. It leverages deep learning techniques to analyze cell images and predict whether malaria is present. The goal is to provide an affordable and accessible diagnostic tool, particularly for rural and underserved communities, enabling early detection and timely treatment of malaria.
 
-🏥 What PlasmoScan Does
 
-PlasmoScan is an AI-powered web application designed to detect malaria from blood smear images. It utilizes deep learning to analyze cell images and provide a prediction on whether malaria is present. The goal is to provide an affordable and accessible diagnostic tool for early malaria detection.
-
-🔧 How to Run It
-
-1️⃣ Installation
-
-Ensure you have Python installed, then clone this repository:
-
-git clone https://github.com/yourusername/PlasmoScan.git
-cd PlasmoScan
-
-2️⃣ Install Dependencies
-
-pip install -r requirements.txt
-
-3️⃣ Run the Web Application
-
-python app.py
-
-The app will run on http://127.0.0.1:5000/.
 
 📸 Dataset Location
+The dataset used for training and testing is stored at:
+data/cell_images/
 
-The dataset is located at data/cell_images/. Due to its large size, you can download it from:
-Dataset Link
+📌 Due to its large size, you can download the dataset from:
+🔗 Dataset Link https://lhncbc.nlm.nih.gov/publication/pub9932
 
 🖼️ Flowchart of the System
+Below is the workflow of PlasmoScan from image upload to diagnosis result:
 
-User Uploads Blood Smear Image 📤
+1️⃣ User Uploads a Blood Smear Image 📤
+2️⃣ AI Analyzes the Image Using Deep Learning 🤖
+3️⃣ Prediction with Confidence Score is Generated 📊
+4️⃣ Result is Displayed to the User ✅
 
-AI Analyzes Image Using Deep Learning Model 🤖
+<img width="941" alt="flow chart" src="https://github.com/user-attachments/assets/8a763977-f7ef-44ce-9155-29928f021b28" />
 
-Prediction with Confidence Score is Generated 📊
+💡 Challenges We Faced
+During the development of PlasmoScan, we encountered several challenges, including:
 
-Result is Displayed to the User ✅
+Model Accuracy & Overfitting: Ensuring high prediction accuracy while preventing overfitting during training.
 
-💡 Challenges We Ran Into
+Image Preprocessing: Optimizing techniques like noise reduction and feature extraction to improve detection quality.
 
-Training the model with a high accuracy while avoiding overfitting.
+User Interface: Designing a simple and intuitive interface for easy usability by non-technical users.
 
-Optimizing image preprocessing to improve prediction quality.
+Dataset Handling: Managing large dataset files efficiently while ensuring smooth AI model training and testing.
 
-Implementing a smooth and user-friendly web interface.
-
-Handling large dataset files and managing deployment.
+Deployment: Making the AI model lightweight and fast for real-time predictions.
 
 🔬 Technologies Used
+Category	Technologies
+Deep Learning	TensorFlow, Keras
+Computer Vision	OpenCV
+Backend	Flask, Django
+Frontend	HTML, CSS, JavaScript
+Mobile App (Future Expansion)	Flutter
+🌍 Use Case: How PlasmoScan Works in a Real-Life Scenario
+Step 1: Patient Visits a Local Clinic
+A patient in a rural area experiences symptoms such as fever, chills, and fatigue.
 
-Deep Learning: TensorFlow/Keras
+The healthcare worker suspects malaria and decides to conduct a diagnostic test.
 
-Computer Vision: OpenCV
-
-Backend: Flask/Django
-
-Frontend: HTML, CSS, JavaScript
-
-Mobile App (Future Expansion): Flutter
-
-Use Case: How PlasmoScan Works in a Real-Life Scenario
-Patient Visits a Local Clinic
-
-A patient in a rural area shows symptoms like fever, chills, and fatigue.
-
-The local healthcare worker suspects malaria and decides to test for it.
-
-Blood Sample Collection
-
+Step 2: Blood Sample Collection
 A small blood sample is taken from the patient.
 
 The sample is prepared as a blood smear on a glass slide.
 
-Microscopic Image Capture
-
-The slide is placed under a microscope.
+Step 3: Microscopic Image Capture
+The prepared slide is placed under a microscope.
 
 The healthcare worker captures an image using a mobile camera or digital microscope.
 
-Image Upload to PlasmoScan
+Step 4: Image Upload to PlasmoScan
+The captured image is uploaded to PlasmoScan through a mobile or web-based interface.
 
-The captured image is uploaded to PlasmoScan via a mobile or web-based interface.
+Step 5: AI-Powered Analysis
+The uploaded image is processed using a deep learning model trained on malaria detection.
 
-AI-Powered Analysis
+The AI detects malaria parasites and calculates a confidence score.
 
-PlasmoScan processes the image using deep learning algorithms.
+Step 6: Instant Diagnosis Result
+The system provides an immediate diagnostic result:
+✅ Positive for Malaria → The patient is advised to begin treatment immediately.
+❌ Negative for Malaria → Further medical evaluation may be needed.
 
-It detects malaria parasites and calculates the confidence score.
-
-Instant Diagnosis Result
-
-The system provides an immediate result:
-
-Positive for Malaria → The patient is advised to begin treatment.
-
-Negative for Malaria → Further medical evaluation may be needed.
-
-Faster Treatment & Improved Healthcare
-
-The healthcare worker prescribes the necessary treatment.
+Step 7: Faster Treatment & Improved Healthcare
+The healthcare worker prescribes treatment without waiting for centralized lab results.
 
 The patient receives timely care, reducing complications and risk of severe malaria.
 
-This process eliminates delays, reduces dependence on expert technicians, and brings affordable malaria detection to remote areas.
+📌 This process eliminates delays, reduces dependence on expert technicians, and makes malaria detection affordable for rural healthcare systems.
+
+📢 Future Scope
+🚀 PlasmoScan aims to expand with additional features:
+
+Mobile App Integration: Allowing direct image upload via mobile phones.
+
+Multi-Disease Detection: Extending the model to detect anemia and other blood-related conditions.
+
+Cloud-Based AI Processing: To enable real-time processing and result retrieval.
+
+Integration with Health Organizations: Partnering with NGOs and healthcare providers for large-scale deployment.
+
+🏆 Contributors & Team Members
+👨‍💻 Sambhav Mishra (Lead Developer, AI Engineer)
+👩‍💻 Vansh Talani (Frontend & Backend Development)
+📊 Sundaram  (Data Science & Model Training)
+
+📩 Contact & Support
+📧 Email:sammishr8319@gmail.com
+🌐 Project Repository: [GitHub Repo](https://github.com/SambhavMishra8319/PlasmoScan/)
+
+🚀 Join us in revolutionizing malaria detection with AI!
+
