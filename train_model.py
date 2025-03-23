@@ -45,7 +45,7 @@ model = keras.Sequential([
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-# Train the model and store history
+# Train the model and store hisiory
 history = model.fit(train_generator, validation_data=val_generator, epochs=10)
 
 # Save the trained model
